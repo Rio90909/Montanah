@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Montanah ✨</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,900;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0b0205;
+            color: #fff1f2;
+            overflow-x: hidden;
+            transition: background-color 0.8s ease;
+        }
+        .name-title {
+            font-family: 'Playfair Display', serif;
+            text-shadow: 0 10px 30px rgba(0,0,0,0.6);
+        }
+        /* Vivid, hardware-accelerated Pink/Rose Mesh Background layers */
+        .aurora-bg {
+            position: fixed;
+            inset: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 0;
+            opacity: 0.65;
+            mix-blend-mode: screen;
+            pointer-events: none;
+            will-change: transform;
+            transform: translate3d(0,0,0);
+        }
+        .aurora-blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            will-change: transform;
+        }
+
+        /* 10 Stunning Pink-Inspired Text Gradients for her name */
+        .style-1 { background: linear-gradient(135deg, #ff007f 0%, #ff99cc 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .style-2 { background: linear-gradient(135deg, #f43f5e 0%, #fbcfe8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .style-3 { background: linear-gradient(135deg, #ec4899 0%, #f472b6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .style-4 { background: linear-gradient(135deg, #db2777 0%, #fda4af 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .style-5 { background: linear-gradient(135deg, #9d174d 0%, #f43f5e 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .style-6 { background: linear-gradient(135deg, #ff0055 0%, #ffffff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .style-7 { background: linear-gradient(135deg, #fb7185 0%, #ff007f 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .style-8 { background: linear-gradient(135deg, #ff00aa 0%, #ffe4e6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .style-9 { background: linear-gradient(135deg, #f43f5e 0%, #e11d48 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .style-10 { background: linear-gradient(135deg, #ffffff 0%, #f472b6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+        .glass-panel {
+            background: rgba(20, 5, 12, 0.45);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(244, 63, 94, 0.15);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+        }
+
+        .chat-bubble-app {
+            background: rgba(255, 255, 255, 0.04);
+            border-left: 3px solid #ff007f;
+        }
+
+        .typing-cursor::after {
+            content: '|';
+            animation: blink 0.8s infinite;
+        }
+        @keyframes blink { 50% { opacity: 0; } }
+    </style>
+</head>
+<body class="relative min-h-screen flex flex-col justify-between items-center p-4 md:p-8 select-none">
+
+    <!-- Vivid Pink Gradient Orbs for her background profile -->
+    <div class="aurora-bg">
+        <div id="blob1" class="aurora-blob w-[300px] h-[300px] md:w-[600px] md:h-[600px] top-[-10%] left-[-10%]" style="background: rgba(255, 0, 127, 0.55);"></div>
+        <div id="blob2" class="aurora-blob w-[350px] h-[350px] md:w-[700px] md:h-[700px] bottom-[-20%] right-[-10%]" style="background: rgba(157, 23, 77, 0.5);"></div>
+        <div id="blob3" class="aurora-blob w-[250px] h-[250px] md:w-[500px] md:h-[500px] top-[30%] right-[10%]" style="background: rgba(244, 63, 94, 0.35);"></div>
+    </div>
+
+    <!-- Intro Splash Overlay -->
+    <div id="unlockOverlay" class="fixed inset-0 z-50 flex flex-col justify-center items-center bg-[#090104] px-6 text-center transition-all duration-700">
+        <div class="animate-pulse mb-6 text-4xl">💖</div>
+        <h1 class="name-title text-5xl md:text-7xl font-black style-1 mb-4 tracking-wide">Montanah</h1>
+        <p class="text-rose-200/60 text-sm max-w-sm mb-8 leading-relaxed font-light">
+            Hey Montanah, I designed this custom, pink-infused digital aura experience just for you.
+        </p>
+        <button onclick="startExperience()" class="px-10 py-5 bg-gradient-to-r from-rose-500 via-pink-600 to-fuchsia-500 rounded-full font-bold text-xs tracking-[0.2em] uppercase hover:scale-105 active:scale-95 transition-all duration-300 shadow-xl shadow-pink-500/30">
+            Open Message from Ryan
+        </button>
+    </div>
+
+    <!-- Header Info -->
+    <header class="w-full max-w-5xl flex justify-between items-center z-10 py-2 border-b border-rose-500/10 opacity-90">
+        <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-pink-400 animate-ping"></span>
+            <span class="text-[10px] tracking-widest uppercase text-rose-200 font-bold">Ryan // Direct Channel</span>
+        </div>
+        <span class="text-[10px] tracking-widest uppercase text-pink-400 font-black">To: Montanah</span>
+    </header>
+
+    <!-- Main Container -->
+    <main class="w-full max-w-3xl my-auto z-10 flex flex-col items-center justify-center py-6">
+        
+        <span class="text-[10px] uppercase tracking-[0.4em] text-pink-300 font-bold mb-2">Personal Resonance Profile</span>
+        
+        <!-- Big Premium Name Header -->
+        <div class="h-28 md:h-36 flex items-center justify-center mb-2">
+            <h1 id="nameDisplay" class="name-title text-6xl sm:text-7xl md:text-8xl font-black tracking-wide style-1">
+                Montanah
+            </h1>
+        </div>
+
+        <!-- Dynamic Messenger Box -->
+        <div class="w-full px-2 max-w-xl mb-8">
+            <div class="glass-panel p-6 rounded-3xl w-full border border-pink-500/10 shadow-2xl text-left">
+                <!-- Message Header Identity -->
+                <div class="text-[10px] uppercase tracking-widest text-pink-400 font-bold mb-3 flex items-center gap-1.5">
+                    <span class="text-xs">💬</span> Ryan says:
+                </div>
+                
+                <!-- Typing Content Window -->
+                <p id="messageText" class="text-rose-50 text-base md:text-lg font-medium tracking-wide leading-relaxed min-h-[120px] chat-bubble-app p-4 rounded-2xl typing-cursor">
+                    <!-- Text generates dynamically -->
+                </p>
+            </div>
+        </div>
+
+        <p class="text-[10px] uppercase tracking-[0.3em] text-rose-300/60 mb-4 font-bold">Tap a pink aura panel below to chat with me:</p>
+
+        <!-- 10 Color-Coded Interface Trigger Tabs -->
+        <div class="grid grid-cols-2 sm:grid-cols-5 gap-2.5 w-full px-1">
+            <button onclick="interactWithApp(1)" class="glass-panel p-3 rounded-2xl flex flex-col items-center gap-2 group hover:border-pink-500/40 hover:scale-105 active:scale-95"><div class="w-5 h-5 rounded-full bg-gradient-to-r from-pink-500 to-rose-400 shadow-md shadow-pink-500/20"></div><span class="text-[9px] font-bold tracking-wider text-rose-300 group-hover:text-white">Profile 01</span></button>
+            <button onclick="interactWithApp(2)" class="glass-panel p-3 rounded-2xl flex flex-col items-center gap-2 group hover:border-pink-400/40 hover:scale-105 active:scale-95"><div class="w-5 h-5 rounded-full bg-gradient-to-r from-rose-400 to-pink-300 shadow-md shadow-pink-500/20"></div><span class="text-[9px] font-bold tracking-wider text-rose-300 group-hover:text-white">Profile 02</span></button>
+            <button onclick="interactWithApp(3)" class="glass-panel p-3 rounded-2xl flex flex-col items-center gap-2 group hover:border-fuchsia-400/40 hover:scale-105 active:scale-95"><div class="w-5 h-5 rounded-full bg-gradient-to-r from-pink-600 to-fuchsia-400 shadow-md shadow-pink-500/20"></div><span class="text-[9px] font-bold tracking-wider text-rose-300 group-hover:text-white">Profile 03</span></button>
+            <button onclick="interactWithApp(4)" class="glass-panel p-3 rounded-2xl flex flex-col items-center gap-2 group hover:border-rose-400/40 hover:scale-105 active:scale-95"><div class="w-5 h-5 rounded-full bg-gradient-to-r from-rose-500 to-amber-200 shadow-md shadow-pink-500/20"></div><span class="text-[9px] font-bold tracking-wider text-rose-300 group-hover:text-white">Profile 04</span></button>
+            <button onclick="interactWithApp(5)" class="glass-panel p-3 rounded-2xl flex flex-col items-center gap-2 group hover:border-red-400/40 hover:scale-105 active:scale-95"><div class="w-5 h-5 rounded-full bg-gradient-to-r from-rose-600 to-red-400 shadow-md shadow-pink-500/20"></div><span class="text-[9px] font-bold tracking-wider text-rose-300 group-hover:text-white">Profile 05</span></button>
+            <button onclick="interactWithApp(6)" class="glass-panel p-3 rounded-2xl flex flex-col items-center gap-2 group hover:border-pink-300/40 hover:scale-105 active:scale-95"><div class="w-5 h-5 rounded-full bg-gradient-to-r from-fuchsia-300 to-pink-400 shadow-md shadow-pink-500/20"></div><span class="text-[9px] font-bold tracking-wider text-rose-300 group-hover:text-white">Profile 06</span></button>
+            <button onclick="interactWithApp(7)" class="glass-panel p-3 rounded-2xl flex flex-col items-center gap-2 group hover:border-pink-700/40 hover:scale-105 active:scale-95"><div class="w-5 h-5 rounded-full bg-gradient-to-r from-pink-700 to-rose-600 shadow-md shadow-pink-500/20"></div><span class="text-[9px] font-bold tracking-wider text-rose-300 group-hover:text-white">Profile 07</span></button>
+            <button onclick="interactWithApp(8)" class="glass-panel p-3 rounded-2xl flex flex-col items-center gap-2 group hover:border-purple-400/40 hover:scale-105 active:scale-95"><div class="w-5 h-5 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 shadow-md shadow-pink-500/20"></div><span class="text-[9px] font-bold tracking-wider text-rose-300 group-hover:text-white">Profile 08</span></button>
+            <button onclick="interactWithApp(9)" class="glass-panel p-3 rounded-2xl flex flex-col items-center gap-2 group hover:border-rose-300/40 hover:scale-105 active:scale-95"><div class="w-5 h-5 rounded-full bg-gradient-to-r from-rose-400 to-slate-100 shadow-md shadow-pink-500/20"></div><span class="text-[9px] font-bold tracking-wider text-rose-300 group-hover:text-white">Profile 09</span></button>
+            <button onclick="interactWithApp(10)" class="glass-panel p-3 rounded-2xl flex flex-col items-center gap-2 group hover:border-white/40 hover:scale-105 active:scale-95"><div class="w-5 h-5 rounded-full bg-gradient-to-r from-white to-pink-200 shadow-md shadow-pink-500/20"></div><span class="text-[9px] font-bold tracking-wider text-rose-300 group-hover:text-white">Profile 10</span></button>
+        </div>
+
+    </main>
+
+    <!-- Footer Status -->
+    <footer class="w-full max-w-5xl text-center py-4 border-t border-rose-500/5 mt-4 opacity-40 text-[9px] tracking-widest uppercase">
+        Designed by Ryan for Montanah // 2026 Space Concept
+    </footer>
+
+    <!-- Interactive Scripting Matrix -->
+    <script>
+        let audioCtx = null;
+        let typingTimeout = null;
+
+        const dialogue = {
+            1: {
+                style: 'style-1', bg: '#0b0205', b1: '#ff0055', b2: '#33001a', b3: '#f43f5e',
+                text: "You're really the best person to talk to—I love that we can talk about absolutely anything. I was looking for someone with your exact energy, and I'm so glad I found you. Honestly, just thinking about our texts gets me so flustered and excited..."
+            },
+            2: {
+                style: 'style-2', bg: '#0a0104', b1: '#db2777', b2: '#20000a', b3: '#fbcfe8',
+                text: "I started liking talking to you so much yesterday, Montanah. Your entire vibe is completely addictive and you've been on my mind all day."
+            },
+            3: {
+                style: 'style-3', bg: '#0f0208', b1: '#ec4899', b2: '#2b0014', b3: '#f472b6',
+                text: "I’ve been missing you since yesterday. I can't stop thinking of you and wanting to hear your voice."
+            },
+            4: {
+                style: 'style-4', bg: '#080103', b1: '#db2777', b2: '#1c0008', b3: '#fda4af',
+                text: "I was looking for someone like you for a long time, and I'm so incredibly glad I finally found you."
+            },
+            5: {
+                style: 'style-5', bg: '#060002', b1: '#9d174d', b2: '#140005', b3: '#f43f5e',
+                text: "Sometimes talking to you gets me so excited and flustered, in the absolute best way possible. You have a crazy effect on me."
+            },
+            6: {
+                style: 'style-6', bg: '#0b0205', b1: '#ff0055', b2: '#33001a', b3: '#ffffff',
+                text: "I hope you stay in my life for a long, long time, Montanah. You've quickly become my favorite notification."
+            },
+            7: {
+                style: 'style-7', bg: '#070103', b1: '#fb7185', b2: '#1a0006', b3: '#ff007f',
+                text: "You are such an amazing, beautiful presence. Seriously, talking to you makes my entire day instantly better."
+            },
+            8: {
+                style: 'style-8', bg: '#0c0207', b1: '#ff00aa', b2: '#260018', b3: '#ffe4e6',
+                text: "I love how effortlessly we can talk about absolutely anything together without holding back. It feels so rare."
+            },
+            9: {
+                style: 'style-9', bg: '#090103', b1: '#f43f5e', b2: '#1e0008', b3: '#e11d48',
+                text: "I can't wait for our next conversation. To be completely honest, thinking of you is all I've done today."
+            },
+            10: {
+                style: 'style-10', bg: '#050304', b1: '#ffffff', b2: '#1c1216', b3: '#f472b6',
+                text: "Just a beautiful reminder from Ryan that you are incredibly special, gorgeous, and absolutely wonderful to talk to."
+            }
+        };
+
+        function startExperience() {
+            audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            document.getElementById('unlockOverlay').classList.add('opacity-0', 'pointer-events-none');
+            setTimeout(() => document.getElementById('unlockOverlay').style.display = 'none', 500);
+            
+            // Execute automated opening prompt
+            interactWithApp(1);
+        }
+
+        function typeMessage(targetString) {
+            const textContainer = document.getElementById('messageText');
+            textContainer.classList.add('typing-cursor');
+            textContainer.innerText = ""; 
+            
+            let index = 0;
+            if (typingTimeout) clearInterval(typingTimeout);
+
+            typingTimeout = setInterval(() => {
+                if (index < targetString.length) {
+                    textContainer.innerText += targetString.charAt(index);
+                    index++;
+                    if (index % 3 === 0) playAudioClick(900 + (Math.random() * 300), 0.012, 'sine');
+                } else {
+                    clearInterval(typingTimeout);
+                    textContainer.classList.remove('typing-cursor');
+                }
+            }, 25);
+        }
+
+        function playAudioClick(freq, duration, type) {
+            if (!audioCtx) return;
+            let osc = audioCtx.createOscillator();
+            let gain = audioCtx.createGain();
+            
+            osc.type = type;
+            osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+            gain.gain.setValueAtTime(duration, audioCtx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + duration);
+            
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.start();
+            osc.stop(audioCtx.currentTime + duration + 0.05);
+        }
+
+        function playPremiumChime(id) {
+            if (!audioCtx) return;
+            const chords = [293.66, 329.63, 392.00, 440.00, 523.25, 587.33, 659.25, 783.99, 880.00, 987.77];
+            const targetNote = chords[(id - 1) % chords.length];
+
+            playAudioClick(targetNote, 0.35, 'triangle');
+            setTimeout(() => playAudioClick(targetNote * 1.5, 0.18, 'sine'), 60);
+        }
+
+        function interactWithApp(id) {
+            const nameEl = document.getElementById('nameDisplay');
+            const b1 = document.getElementById('blob1');
+            const b2 = document.getElementById('blob2');
+            const b3 = document.getElementById('blob3');
+            
+            const selected = dialogue[id];
+
+            document.body.style.backgroundColor = selected.bg;
+            nameEl.className = `name-title text-6xl sm:text-7xl md:text-8xl font-black tracking-wide drop-shadow-md ${selected.style}`;
+
+            // Hardware accelerated custom pink mesh aura updates
+            b1.style.background = `radial-gradient(circle, ${selected.b1} 0%, rgba(0,0,0,0) 70%)`;
+            b2.style.background = `radial-gradient(circle, ${selected.b2} 0%, rgba(0,0,0,0) 70%)`;
+            b3.style.background = `radial-gradient(circle, ${selected.b3} 0%, rgba(0,0,0,0) 70%)`;
+
+            b1.style.transform = `translate3d(${Math.sin(id) * 25}px, ${Math.cos(id) * 25}px, 0)`;
+            b2.style.transform = `translate3d(${Math.cos(id) * -35}px, ${Math.sin(id) * 35}px, 0)`;
+
+            typeMessage(selected.text);
+            playPremiumChime(id);
+        }
+    </script>
+</body>
+</html>
+
